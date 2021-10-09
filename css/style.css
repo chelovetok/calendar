@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.calendar__container{
+    position: relative;
+    border: 1px rgb(0, 247, 255) solid;
+    width: 640px;
+    height: 520px;
+}
+.calendar i{
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.calendar i:first-child{
+    margin-right: 25px;
+}
+.calendar__month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.calendar__weekdays{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px rgb(0, 247, 255) solid;
+    border-bottom: 1px rgb(0, 247, 255) solid;
+    border-radius: 30px;
+    padding: 5px 0;
+}
+.calendar__weekdays div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 5px 5px;
+}
+.today{
+    border: 1px blueviolet solid !important;
+}
+.days div{
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    transition: border .2s ease-in-out;
+}
+.days div:hover{
+    border: 1px blueviolet solid;
+}
+.prev-date, .next-date{
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+}
+.notification{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: -30%;
+    left: 26.5%;
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* .calendar__date{
+ 
+}
+.calendar__arrows{
+
+} */
